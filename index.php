@@ -1,3 +1,7 @@
+<?php
+session_start();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -133,10 +137,6 @@ table {
     opacity: 1;               /* Fully visible */
     transform: translateY(0); /* Move back to original position */
 }
-html {
-    scroll-behavior: smooth;
-}
-
     </style>
     </head>
 
@@ -157,17 +157,15 @@ html {
             <div class="row gx-0 align-items-center">
                 <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
                     <div class="d-flex flex-wrap">
-                        <a href="https://www.google.com/maps?q=Bhubaneswar,+Odisha,+India" class="text-muted small me-4" target="_blank">
-                            <i class="fas fa-map-marker-alt text-primary me-2"></i>Find a Location
-                        </a>                        
-                        <a href="tel:+917008691210" class="text-muted small me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+91 7008691210</a>
+                        <a href="#" class="text-muted small me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
+                        <a href="tel:+917849025589" class="text-muted small me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+91 7849025589</a>
                         <a href="mailto:quantsai@gmail.com" class="text-muted small me-0"><i class="fas fa-envelope text-primary me-2"></i>quantsai@gmail.com</a>
                     </div>
                 </div>
                 <div class="col-lg-4 text-center text-lg-end">
                     <div class="d-inline-flex align-items-center" style="height: 45px;">
-                        <a href="Register.html"><small class="me-3 text-dark"><i class="fa fa-user text-primary me-2"></i>Register</small></a>
-                        <a href="Login.html"><small class="me-3 text-dark"><i class="fa fa-sign-in-alt text-primary me-2"></i>Login</small></a>
+                        <a href="Register.php"><small class="me-3 text-dark"><i class="fa fa-user text-primary me-2"></i>Register</small></a>
+                        <a href="Login.php"><small class="me-3 text-dark"><i class="fa fa-sign-in-alt text-primary me-2"></i>Login</small></a>
                         <div class="dropdown">
                             <a href="#" class="dropdown-toggle text-dark" data-bs-toggle="dropdown">
                                 <small>
@@ -213,8 +211,8 @@ html {
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="index.php" class="nav-item nav-link active">Home</a>
+                        <a href="about.php" class="nav-item nav-link">About</a>
                         <a href="service.html" class="nav-item nav-link">Services</a>
                         <a href="blog.html" class="nav-item nav-link">Blogs</a>
                         <div class="nav-item dropdown">
@@ -232,7 +230,7 @@ html {
                         </div>
                         <a href="contact.html" class="nav-item nav-link">Contact Us</a>
                     </div>
-                    <a href="Register.html" class="btn btn-primary rounded-pill py-2 px-4 my-3 my-lg-0 flex-shrink-0">Get Started</a>
+                    <a href="Register.php" class="btn btn-primary rounded-pill py-2 px-4 my-3 my-lg-0 flex-shrink-0">Get Started</a>
                 </div>
             </nav>
 
@@ -252,7 +250,7 @@ html {
                                         </p>
                                         <div class="d-flex justify-content-center justify-content-md-end flex-shrink-0 mb-4">
                                             <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="https://www.youtube.com/@QuantsAI/videos"><i class="fas fa-play-circle me-2"></i> Watch Video</a>
-                                            <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="#next-section">Learn More</a>
+                                            <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="#">Learn More</a>
                                         </div>
                                         <div class="d-flex align-items-center justify-content-center justify-content-md-end">
                                             <h2 class="text-white me-2">Follow Us:</h2>
@@ -282,7 +280,7 @@ html {
                                         </p>
                                         <div class="d-flex justify-content-center flex-shrink-0 mb-4">
                                             <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="https://www.youtube.com/@QuantsAI/videos"><i class="fas fa-play-circle me-2"></i> Watch Video</a>
-                                            <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="#next-section">Learn More</a>
+                                            <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="#">Learn More</a>
                                         </div>
                                         <div class="d-flex align-items-center justify-content-center">
                                             <h2 class="text-white me-2">Follow Us:</h2>
@@ -306,7 +304,7 @@ html {
 
 
         <!-- Abvout Start -->
-        <div class="container-fluid about py-5" id="next-section">
+        <div class="container-fluid about py-5">
             <div class="container py-5">
                 <div class="row g-5 align-items-center">
                     <div class="col-xl-7 wow fadeInLeft" data-wow-delay="0.2s">
@@ -892,11 +890,6 @@ function toggleDescription(id) {
       <td>Client Relations Specialist</td>
       <td>Neha's dedication to client satisfaction makes her the heart of our team. Her personalized approach ensures that each client receives the best possible service and support.</td>
     </tr>
-    <tr>
-        <td>Nishant Sankar Swain</td>
-        <td>Devloper</td>
-        <td>Developed a comprehensive Quants-AI trading website that integrates advanced algorithms and real-time data analytics to optimize trading strategies and enhance decision-making for investors.</td>
-    </tr>
   </tbody>
 </table>
                 </div>
@@ -911,10 +904,10 @@ function toggleDescription(id) {
                                 <p class="mb-0">Devloper</p>
                             </div>
                             <div class="team-icon">
-                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="https://www.facebook.com/nishant.sankar.3?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="https://x.com/sankar_nishant"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="https://www.linkedin.com/in/nishant-sankar-swain-1abb71246"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="btn btn-primary btn-sm-square rounded-circle me-0" href="https://www.instagram.com/nishant_sankar?igsh=MTE2OWl2Z3dibTlyZA=="><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-0" href=""><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -924,8 +917,8 @@ function toggleDescription(id) {
                                 <img src="img/team-2.jpg" class="img-fluid" alt="">
                             </div>
                             <div class="team-title">
-                                <h4 class="mb-0">Rajesh Kumar</h4>
-                                <p class="mb-0">Chief Financial Adviser</p>
+                                <h4 class="mb-0">David James</h4>
+                                <p class="mb-0">Profession</p>
                             </div>
                             <div class="team-icon">
                                 <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
@@ -941,8 +934,8 @@ function toggleDescription(id) {
                                 <img src="img/team-3.jpg" class="img-fluid" alt="">
                             </div>
                             <div class="team-title">
-                                <h4 class="mb-0">Prakash Mehta</h4>
-                                <p class="mb-0">Risk Management Expert</p>
+                                <h4 class="mb-0">David James</h4>
+                                <p class="mb-0">Profession</p>
                             </div>
                             <div class="team-icon">
                                 <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
@@ -958,8 +951,8 @@ function toggleDescription(id) {
                                 <img src="img/team-4.jpg" class="img-fluid" alt="">
                             </div>
                             <div class="team-title">
-                                <h4 class="mb-0">Neha Gupta</h4>
-                                <p class="mb-0">Client Relations Specialist	</p>
+                                <h4 class="mb-0">David James</h4>
+                                <p class="mb-0">Profession</p>
                             </div>
                             <div class="team-icon">
                                 <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
@@ -1107,7 +1100,7 @@ function toggleDescription(id) {
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-6 col-xl-4">
                         <div class="footer-item">
-                            <a href="index.html" class="p-0">
+                            <a href="index.php" class="p-0">
                                 <h4 class="text-white"><i class="fas fa-search-dollar me-3"></i>Quants-AI</h4>
                                 <!-- <img src="img/logo.png" alt="Logo"> -->
                             </a>
@@ -1189,10 +1182,10 @@ function toggleDescription(id) {
             <div class="container">
                 <div class="row g-4 align-items-center">
                     <div class="col-md-6 text-center text-md-start mb-md-0">
-                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas  text-light me-2"></i>&copy;Quants-AI</a>, All right reserved.</span>
+                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Quants-AI</a>, All right reserved.</span>
                     </div>
                     <div class="col-md-6 text-center text-md-end text-body">
-                        Designed By <a class="border-bottom text-white" href="https://nishant18s.github.io/Portfolio/PORTFOLIO/Portfolio">Nishant Sankar Swain</a>
+                        Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">Nishant Sankar Swain</a>
                     </div>
                 </div>
             </div>
@@ -1224,14 +1217,14 @@ document.getElementById("logout-link").addEventListener("click", function(event)
     
     if (confirmLogout) {
         
-        window.location.href = "logout.html";
+        window.location.href = "logout.php";
     }
 });
 
 
 window.addEventListener("beforeunload", function(event) {
     
-    navigator.sendBeacon("logout.html"); 
+    navigator.sendBeacon("logout.php"); 
 });
 </script>
 <script>
